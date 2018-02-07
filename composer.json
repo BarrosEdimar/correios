@@ -1,6 +1,7 @@
 {
     "require": {
         "nesbot/carbon": "^1.22",
-        "flyingluscas/correios-php": "^2.3"
+        "flyingluscas/correios-php": "^2.3",
+        "twbs/bootstrap": "4.0.0"
     }
 }
