@@ -1,0 +1,57 @@
+{
+    "name": "flyingluscas/correios-php",
+    "type": "library",
+    "description": "Uma maneira fácil de interagir com as principais funcionalidades dos Correios.",
+    "keywords": [
+        "flyingluscas",
+        "correios-php",
+        "correios",
+        "frete",
+        "calculo",
+        "rastreio",
+        "cep"
+    ],
+    "homepage": "https://github.com/flyingluscas/correios-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Pires",
+            "email": "lucas.pires.mattos@gmail.com",
+            "homepage": "https://github.com/flyingluscas",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~5.6|~7.0",
+        "guzzlehttp/guzzle": "~6.2"
+    },
+    "require-dev": {
+        "codeclimate/php-test-reporter": "~0.3",
+        "mockery/mockery": "~0.9",
+        "phpunit/phpunit": "~5.0",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "FlyingLuscas\\Correios\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FlyingLuscas\\Correios\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --colors=always",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
